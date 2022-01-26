@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl#"
+     xml:base="http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl">
+        <dc:creator>Irene Sainz de la Maza</dc:creator>
+        <dc:creator>Óscar Fernández Blanco</dc:creator>
+        <dc:description>Ontology code created by Chowlk</dc:description>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocab/creator -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/creator">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/Publication"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label>creator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/publisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/publisher">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/Publication"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>publisher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#InvestigatesProblem -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#InvestigatesProblem">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalStudy"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#Problem"/>
+        <rdfs:label>investigates problem</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#addressesResearch -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#addressesResearch">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/Publication"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#ResearchActivity"/>
+        <rdfs:label>addresses research</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#findEvidence -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#findEvidence">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalStudy"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#Evidence"/>
+        <rdfs:label>find evidence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasDisease -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasDisease">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Patient"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/doid#Disease"/>
+        <rdfs:label>has disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasExperimentMethod -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasExperimentMethod">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Method"/>
+        <rdfs:range rdf:resource="http://semanticscience.org/ontology/.sio.owlExperiment"/>
+        <rdfs:label>has experiment method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasGene -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasGene">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Material"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#Gene"/>
+        <rdfs:label>has gene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasMaterial">
+        <rdfs:domain rdf:resource="http://semanticscience.org/ontology/.sio.owlExperiment"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#Material"/>
+        <rdfs:label>has material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasStudyDesign -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasStudyDesign">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalStudy"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#StudyDesign"/>
+        <rdfs:label>has study design</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#isClinicalTrial -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#isClinicalTrial">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Patient"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalTrial"/>
+        <rdfs:label>is clinical trial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#testOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#testOn">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/chebi#drug"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalTrial"/>
+        <rdfs:label>test on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#useClinicalData -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#useClinicalData">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalStudy"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalData"/>
+        <rdfs:label>use clinical data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#useDrug -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#useDrug">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Treat"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/chebi#drug"/>
+        <rdfs:label>use drug</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#useTreatment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/pharmsci#useTreatment">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Treat"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncit#Method"/>
+        <rdfs:label>use treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasDrugEffects -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasDrugEffects">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/chebi#drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>has drug effects</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncit#Gene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>has overexpression gene</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#drug -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/chebi#drug">
+        <rdfs:label>drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/doid#Disease -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/doid#Disease">
+        <rdfs:label>Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/doid#cancer -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/doid#cancer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation"/>
+        <rdfs:label>cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/doid#celltypecancer -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/doid#celltypecancer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/doid#cancer"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/doid#organsystemcancer"/>
+        <rdfs:label>celltypecancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/doid#Disease"/>
+        <rdfs:label>diseaseofcellularproliferation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/doid#organsystemcancer -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/doid#organsystemcancer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/doid#cancer"/>
+        <rdfs:label>organsystemcancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#ClinicalData -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#ClinicalData">
+        <rdfs:label>Clinical Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#ClinicalStudy -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#ClinicalStudy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ncit#ResearchActivity"/>
+        <rdfs:label>Clinical Study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#ClinicalTrial -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#ClinicalTrial">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ncit#ClinicalStudy"/>
+        <rdfs:label>Clinical Trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Evidence -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Evidence">
+        <rdfs:label>Evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Gene -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Gene">
+        <rdfs:label>Gene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Material -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Material">
+        <rdfs:label>Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Method -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Method">
+        <rdfs:label>Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Patient -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Patient">
+        <rdfs:label>Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Problem -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Problem">
+        <rdfs:label>Problem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#ResearchActivity -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#ResearchActivity">
+        <rdfs:label>Research Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#StudyDesign -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#StudyDesign">
+        <rdfs:label>Study Design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncit#Treat -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncit#Treat">
+        <rdfs:label>Treat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/Publication -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocab/Publication">
+        <rdfs:label>Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/ontology/.sio.owlExperiment -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/ontology/.sio.owlExperiment">
+        <rdfs:label>Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl">
+        <dc:title>Cancer Disease Ontology</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+        <rdfs:label>Literal</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

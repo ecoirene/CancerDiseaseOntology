@@ -1,0 +1,302 @@
+@prefix : <http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> .
+
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> rdf:type owl:Ontology ;
+                                                         <http://purl.org/dc/elements/1.1/creator> "Irene Sainz de la Maza" ,
+                                                                                                   "Óscar Fernández Blanco" ;
+                                                         <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
+                                                         owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/vocab/creator
+<http://purl.org/vocab/creator> rdf:type owl:ObjectProperty ;
+                                rdfs:domain <http://purl.org/vocab/Publication> ;
+                                rdfs:range <http://xmlns.com/foaf/0.1/Person> ;
+                                rdfs:label "creator" .
+
+
+###  http://purl.org/vocab/publisher
+<http://purl.org/vocab/publisher> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <http://purl.org/vocab/Publication> ;
+                                  rdfs:range <http://xmlns.com/foaf/0.1/Organization> ;
+                                  rdfs:label "publisher" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#InvestigatesProblem
+<http://www.owl-ontologies.com/pharmsci#InvestigatesProblem> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> ;
+                                                             rdfs:range <http://purl.obolibrary.org/obo/ncit#Problem> ;
+                                                             rdfs:label "investigates problem" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#addressesResearch
+<http://www.owl-ontologies.com/pharmsci#addressesResearch> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://purl.org/vocab/Publication> ;
+                                                           rdfs:range <http://purl.obolibrary.org/obo/ncit#ResearchActivity> ;
+                                                           rdfs:label "addresses research" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#findEvidence
+<http://www.owl-ontologies.com/pharmsci#findEvidence> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> ;
+                                                      rdfs:range <http://purl.obolibrary.org/obo/ncit#Evidence> ;
+                                                      rdfs:label "find evidence" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasDisease
+<http://www.owl-ontologies.com/pharmsci#hasDisease> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/ncit#Patient> ;
+                                                    rdfs:range <http://purl.obolibrary.org/obo/doid#Disease> ;
+                                                    rdfs:label "has disease" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasExperimentMethod
+<http://www.owl-ontologies.com/pharmsci#hasExperimentMethod> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://purl.obolibrary.org/obo/ncit#Method> ;
+                                                             rdfs:range <http://semanticscience.org/ontology/.sio.owlExperiment> ;
+                                                             rdfs:label "has experiment method" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasGene
+<http://www.owl-ontologies.com/pharmsci#hasGene> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/ncit#Material> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/ncit#Gene> ;
+                                                 rdfs:label "has gene" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasMaterial
+<http://www.owl-ontologies.com/pharmsci#hasMaterial> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://semanticscience.org/ontology/.sio.owlExperiment> ;
+                                                     rdfs:range <http://purl.obolibrary.org/obo/ncit#Material> ;
+                                                     rdfs:label "has material" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasStudyDesign
+<http://www.owl-ontologies.com/pharmsci#hasStudyDesign> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> ;
+                                                        rdfs:range <http://purl.obolibrary.org/obo/ncit#StudyDesign> ;
+                                                        rdfs:label "has study design" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#isClinicalTrial
+<http://www.owl-ontologies.com/pharmsci#isClinicalTrial> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/ncit#Patient> ;
+                                                         rdfs:range <http://purl.obolibrary.org/obo/ncit#ClinicalTrial> ;
+                                                         rdfs:label "is clinical trial" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#testOn
+<http://www.owl-ontologies.com/pharmsci#testOn> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://purl.obolibrary.org/obo/chebi#drug> ;
+                                                rdfs:range <http://purl.obolibrary.org/obo/ncit#ClinicalTrial> ;
+                                                rdfs:label "test on" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#useClinicalData
+<http://www.owl-ontologies.com/pharmsci#useClinicalData> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> ;
+                                                         rdfs:range <http://purl.obolibrary.org/obo/ncit#ClinicalData> ;
+                                                         rdfs:label "use clinical data" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#useDrug
+<http://www.owl-ontologies.com/pharmsci#useDrug> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/ncit#Treat> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/chebi#drug> ;
+                                                 rdfs:label "use drug" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#useTreatment
+<http://www.owl-ontologies.com/pharmsci#useTreatment> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://purl.obolibrary.org/obo/ncit#Treat> ;
+                                                      rdfs:range <http://purl.obolibrary.org/obo/ncit#Method> ;
+                                                      rdfs:label "use treatment" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://purl.org/vocab/Publication> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:label "title" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasDrugEffects
+<http://www.owl-ontologies.com/pharmsci#hasDrugEffects> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://purl.obolibrary.org/obo/chebi#drug> ;
+                                                        rdfs:range rdfs:Literal ;
+                                                        rdfs:label "has drug effects" .
+
+
+###  http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene
+<http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://purl.obolibrary.org/obo/ncit#Gene> ;
+                                                               rdfs:range rdfs:Literal ;
+                                                               rdfs:label "has overexpression gene" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/chebi#drug
+<http://purl.obolibrary.org/obo/chebi#drug> rdf:type owl:Class ;
+                                            rdfs:label "drug" .
+
+
+###  http://purl.obolibrary.org/obo/doid#Disease
+<http://purl.obolibrary.org/obo/doid#Disease> rdf:type owl:Class ;
+                                              rdfs:label "Disease" .
+
+
+###  http://purl.obolibrary.org/obo/doid#cancer
+<http://purl.obolibrary.org/obo/doid#cancer> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation> ;
+                                             rdfs:label "cancer" .
+
+
+###  http://purl.obolibrary.org/obo/doid#celltypecancer
+<http://purl.obolibrary.org/obo/doid#celltypecancer> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/doid#cancer> ;
+                                                     owl:disjointWith <http://purl.obolibrary.org/obo/doid#organsystemcancer> ;
+                                                     rdfs:label "celltypecancer" .
+
+
+###  http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation
+<http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/doid#Disease> ;
+                                                                     rdfs:label "diseaseofcellularproliferation" .
+
+
+###  http://purl.obolibrary.org/obo/doid#organsystemcancer
+<http://purl.obolibrary.org/obo/doid#organsystemcancer> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/doid#cancer> ;
+                                                        rdfs:label "organsystemcancer" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#ClinicalData
+<http://purl.obolibrary.org/obo/ncit#ClinicalData> rdf:type owl:Class ;
+                                                   rdfs:label "Clinical Data" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#ClinicalStudy
+<http://purl.obolibrary.org/obo/ncit#ClinicalStudy> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/ncit#ResearchActivity> ;
+                                                    rdfs:label "Clinical Study" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#ClinicalTrial
+<http://purl.obolibrary.org/obo/ncit#ClinicalTrial> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> ;
+                                                    rdfs:label "Clinical Trial" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Evidence
+<http://purl.obolibrary.org/obo/ncit#Evidence> rdf:type owl:Class ;
+                                               rdfs:label "Evidence" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Gene
+<http://purl.obolibrary.org/obo/ncit#Gene> rdf:type owl:Class ;
+                                           rdfs:label "Gene" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Material
+<http://purl.obolibrary.org/obo/ncit#Material> rdf:type owl:Class ;
+                                               rdfs:label "Material" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Method
+<http://purl.obolibrary.org/obo/ncit#Method> rdf:type owl:Class ;
+                                             rdfs:label "Method" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Patient
+<http://purl.obolibrary.org/obo/ncit#Patient> rdf:type owl:Class ;
+                                              rdfs:label "Patient" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Problem
+<http://purl.obolibrary.org/obo/ncit#Problem> rdf:type owl:Class ;
+                                              rdfs:label "Problem" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#ResearchActivity
+<http://purl.obolibrary.org/obo/ncit#ResearchActivity> rdf:type owl:Class ;
+                                                       rdfs:label "Research Activity" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#StudyDesign
+<http://purl.obolibrary.org/obo/ncit#StudyDesign> rdf:type owl:Class ;
+                                                  rdfs:label "Study Design" .
+
+
+###  http://purl.obolibrary.org/obo/ncit#Treat
+<http://purl.obolibrary.org/obo/ncit#Treat> rdf:type owl:Class ;
+                                            rdfs:label "Treat" .
+
+
+###  http://purl.org/vocab/Publication
+<http://purl.org/vocab/Publication> rdf:type owl:Class ;
+                                    rdfs:label "Publication" .
+
+
+###  http://semanticscience.org/ontology/.sio.owlExperiment
+<http://semanticscience.org/ontology/.sio.owlExperiment> rdf:type owl:Class ;
+                                                         rdfs:label "Experiment" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Literal
+rdfs:Literal rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:label "Organization" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:label "Person" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> rdf:type owl:NamedIndividual ;
+                                                        <http://purl.org/dc/elements/1.1/title> "Cancer Disease Ontology" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+rdfs:Literal rdfs:label "Literal" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

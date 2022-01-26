@@ -1,0 +1,278 @@
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://purl.org/dc/elements/1.1/creator> "Irene Sainz de la Maza" .
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://purl.org/dc/elements/1.1/creator> "Óscar Fernández Blanco" .
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocab/creator
+<http://purl.org/vocab/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/Publication> .
+<http://purl.org/vocab/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/vocab/creator> <http://www.w3.org/2000/01/rdf-schema#label> "creator" .
+# 
+# http://purl.org/vocab/publisher
+<http://purl.org/vocab/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/publisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/Publication> .
+<http://purl.org/vocab/publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "publisher" .
+# 
+# http://www.owl-ontologies.com/pharmsci#InvestigatesProblem
+<http://www.owl-ontologies.com/pharmsci#InvestigatesProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#InvestigatesProblem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> .
+<http://www.owl-ontologies.com/pharmsci#InvestigatesProblem> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#Problem> .
+<http://www.owl-ontologies.com/pharmsci#InvestigatesProblem> <http://www.w3.org/2000/01/rdf-schema#label> "investigates problem" .
+# 
+# http://www.owl-ontologies.com/pharmsci#addressesResearch
+<http://www.owl-ontologies.com/pharmsci#addressesResearch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#addressesResearch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/Publication> .
+<http://www.owl-ontologies.com/pharmsci#addressesResearch> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#ResearchActivity> .
+<http://www.owl-ontologies.com/pharmsci#addressesResearch> <http://www.w3.org/2000/01/rdf-schema#label> "addresses research" .
+# 
+# http://www.owl-ontologies.com/pharmsci#findEvidence
+<http://www.owl-ontologies.com/pharmsci#findEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#findEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> .
+<http://www.owl-ontologies.com/pharmsci#findEvidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#Evidence> .
+<http://www.owl-ontologies.com/pharmsci#findEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "find evidence" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasDisease
+<http://www.owl-ontologies.com/pharmsci#hasDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Patient> .
+<http://www.owl-ontologies.com/pharmsci#hasDisease> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/doid#Disease> .
+<http://www.owl-ontologies.com/pharmsci#hasDisease> <http://www.w3.org/2000/01/rdf-schema#label> "has disease" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasExperimentMethod
+<http://www.owl-ontologies.com/pharmsci#hasExperimentMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasExperimentMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Method> .
+<http://www.owl-ontologies.com/pharmsci#hasExperimentMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/ontology/.sio.owlExperiment> .
+<http://www.owl-ontologies.com/pharmsci#hasExperimentMethod> <http://www.w3.org/2000/01/rdf-schema#label> "has experiment method" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasGene
+<http://www.owl-ontologies.com/pharmsci#hasGene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasGene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Material> .
+<http://www.owl-ontologies.com/pharmsci#hasGene> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#Gene> .
+<http://www.owl-ontologies.com/pharmsci#hasGene> <http://www.w3.org/2000/01/rdf-schema#label> "has gene" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasMaterial
+<http://www.owl-ontologies.com/pharmsci#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/ontology/.sio.owlExperiment> .
+<http://www.owl-ontologies.com/pharmsci#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#Material> .
+<http://www.owl-ontologies.com/pharmsci#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "has material" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasStudyDesign
+<http://www.owl-ontologies.com/pharmsci#hasStudyDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasStudyDesign> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> .
+<http://www.owl-ontologies.com/pharmsci#hasStudyDesign> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#StudyDesign> .
+<http://www.owl-ontologies.com/pharmsci#hasStudyDesign> <http://www.w3.org/2000/01/rdf-schema#label> "has study design" .
+# 
+# http://www.owl-ontologies.com/pharmsci#isClinicalTrial
+<http://www.owl-ontologies.com/pharmsci#isClinicalTrial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#isClinicalTrial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Patient> .
+<http://www.owl-ontologies.com/pharmsci#isClinicalTrial> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#ClinicalTrial> .
+<http://www.owl-ontologies.com/pharmsci#isClinicalTrial> <http://www.w3.org/2000/01/rdf-schema#label> "is clinical trial" .
+# 
+# http://www.owl-ontologies.com/pharmsci#testOn
+<http://www.owl-ontologies.com/pharmsci#testOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#testOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/chebi#drug> .
+<http://www.owl-ontologies.com/pharmsci#testOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#ClinicalTrial> .
+<http://www.owl-ontologies.com/pharmsci#testOn> <http://www.w3.org/2000/01/rdf-schema#label> "test on" .
+# 
+# http://www.owl-ontologies.com/pharmsci#useClinicalData
+<http://www.owl-ontologies.com/pharmsci#useClinicalData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#useClinicalData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> .
+<http://www.owl-ontologies.com/pharmsci#useClinicalData> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#ClinicalData> .
+<http://www.owl-ontologies.com/pharmsci#useClinicalData> <http://www.w3.org/2000/01/rdf-schema#label> "use clinical data" .
+# 
+# http://www.owl-ontologies.com/pharmsci#useDrug
+<http://www.owl-ontologies.com/pharmsci#useDrug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#useDrug> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Treat> .
+<http://www.owl-ontologies.com/pharmsci#useDrug> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/chebi#drug> .
+<http://www.owl-ontologies.com/pharmsci#useDrug> <http://www.w3.org/2000/01/rdf-schema#label> "use drug" .
+# 
+# http://www.owl-ontologies.com/pharmsci#useTreatment
+<http://www.owl-ontologies.com/pharmsci#useTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/pharmsci#useTreatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Treat> .
+<http://www.owl-ontologies.com/pharmsci#useTreatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/ncit#Method> .
+<http://www.owl-ontologies.com/pharmsci#useTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "use treatment" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/Publication> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasDrugEffects
+<http://www.owl-ontologies.com/pharmsci#hasDrugEffects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasDrugEffects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/chebi#drug> .
+<http://www.owl-ontologies.com/pharmsci#hasDrugEffects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.owl-ontologies.com/pharmsci#hasDrugEffects> <http://www.w3.org/2000/01/rdf-schema#label> "has drug effects" .
+# 
+# http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene
+<http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ncit#Gene> .
+<http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene> <http://www.w3.org/2000/01/rdf-schema#label> "has overexpression gene" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/chebi#drug
+<http://purl.obolibrary.org/obo/chebi#drug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/chebi#drug> <http://www.w3.org/2000/01/rdf-schema#label> "drug" .
+# 
+# http://purl.obolibrary.org/obo/doid#Disease
+<http://purl.obolibrary.org/obo/doid#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/doid#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+# 
+# http://purl.obolibrary.org/obo/doid#cancer
+<http://purl.obolibrary.org/obo/doid#cancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/doid#cancer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation> .
+<http://purl.obolibrary.org/obo/doid#cancer> <http://www.w3.org/2000/01/rdf-schema#label> "cancer" .
+# 
+# http://purl.obolibrary.org/obo/doid#celltypecancer
+<http://purl.obolibrary.org/obo/doid#celltypecancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/doid#celltypecancer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/doid#cancer> .
+<http://purl.obolibrary.org/obo/doid#celltypecancer> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/doid#organsystemcancer> .
+<http://purl.obolibrary.org/obo/doid#celltypecancer> <http://www.w3.org/2000/01/rdf-schema#label> "celltypecancer" .
+# 
+# http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation
+<http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/doid#Disease> .
+<http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation> <http://www.w3.org/2000/01/rdf-schema#label> "diseaseofcellularproliferation" .
+# 
+# http://purl.obolibrary.org/obo/doid#organsystemcancer
+<http://purl.obolibrary.org/obo/doid#organsystemcancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/doid#organsystemcancer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/doid#cancer> .
+<http://purl.obolibrary.org/obo/doid#organsystemcancer> <http://www.w3.org/2000/01/rdf-schema#label> "organsystemcancer" .
+# 
+# http://purl.obolibrary.org/obo/ncit#ClinicalData
+<http://purl.obolibrary.org/obo/ncit#ClinicalData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#ClinicalData> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Data" .
+# 
+# http://purl.obolibrary.org/obo/ncit#ClinicalStudy
+<http://purl.obolibrary.org/obo/ncit#ClinicalStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#ClinicalStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ncit#ResearchActivity> .
+<http://purl.obolibrary.org/obo/ncit#ClinicalStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Study" .
+# 
+# http://purl.obolibrary.org/obo/ncit#ClinicalTrial
+<http://purl.obolibrary.org/obo/ncit#ClinicalTrial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#ClinicalTrial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ncit#ClinicalStudy> .
+<http://purl.obolibrary.org/obo/ncit#ClinicalTrial> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Trial" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Evidence
+<http://purl.obolibrary.org/obo/ncit#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Gene
+<http://purl.obolibrary.org/obo/ncit#Gene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Gene> <http://www.w3.org/2000/01/rdf-schema#label> "Gene" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Material
+<http://purl.obolibrary.org/obo/ncit#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Method
+<http://purl.obolibrary.org/obo/ncit#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Method> <http://www.w3.org/2000/01/rdf-schema#label> "Method" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Patient
+<http://purl.obolibrary.org/obo/ncit#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Problem
+<http://purl.obolibrary.org/obo/ncit#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Problem> <http://www.w3.org/2000/01/rdf-schema#label> "Problem" .
+# 
+# http://purl.obolibrary.org/obo/ncit#ResearchActivity
+<http://purl.obolibrary.org/obo/ncit#ResearchActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#ResearchActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Research Activity" .
+# 
+# http://purl.obolibrary.org/obo/ncit#StudyDesign
+<http://purl.obolibrary.org/obo/ncit#StudyDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#StudyDesign> <http://www.w3.org/2000/01/rdf-schema#label> "Study Design" .
+# 
+# http://purl.obolibrary.org/obo/ncit#Treat
+<http://purl.obolibrary.org/obo/ncit#Treat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ncit#Treat> <http://www.w3.org/2000/01/rdf-schema#label> "Treat" .
+# 
+# http://purl.org/vocab/Publication
+<http://purl.org/vocab/Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication" .
+# 
+# http://semanticscience.org/ontology/.sio.owlExperiment
+<http://semanticscience.org/ontology/.sio.owlExperiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/ontology/.sio.owlExperiment> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Literal
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> <http://purl.org/dc/elements/1.1/title> "Cancer Disease Ontology" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#label> "Literal" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

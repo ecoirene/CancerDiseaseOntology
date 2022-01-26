@@ -1,0 +1,685 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.obolibrary.org/obo/chebi", "http://purl.obolibrary.org/obo/ncit", "http://semanticscience.org/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/vocab", "http://purl.obolibrary.org/obo/doid", "http://www.w3.org/2001/XMLSchema", "http://www.owl-ontologies.com/pharmsci", "http://xmlns.com/foaf/0.1", "http://purl.org/dc/elements/1.1" ],
+    "iri" : "http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl",
+    "version" : "0.0.1",
+    "author" : [ "Irene Sainz de la Maza", "Óscar Fernández Blanco" ],
+    "description" : {
+      "undefined" : "Ontology code created by Chowlk"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Irene Sainz de la Maza",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Óscar Fernández Blanco",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Material",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "undefined" : "Material"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://semanticscience.org/ontology/.sio.owlExperiment",
+    "baseIri" : "http://semanticscience.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : ".sio.owlExperiment",
+      "undefined" : "Experiment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Gene",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gene",
+      "undefined" : "Gene"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Treat",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Treat",
+      "undefined" : "Treat"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid#organsystemcancer",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "organsystemcancer",
+      "undefined" : "organsystemcancer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid#cancer",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "cancer",
+      "undefined" : "cancer"
+    },
+    "subClasses" : [ "13", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid#Disease",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disease",
+      "undefined" : "Disease"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#StudyDesign",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StudyDesign",
+      "undefined" : "Study Design"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#ResearchActivity",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResearchActivity",
+      "undefined" : "Research Activity"
+    },
+    "subClasses" : [ "20" ],
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#ClinicalData",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClinicalData",
+      "undefined" : "Clinical Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/chebi#drug",
+    "baseIri" : "http://purl.obolibrary.org/obo/chebi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "drug",
+      "undefined" : "drug"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Patient",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient",
+      "undefined" : "Patient"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Method",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Method",
+      "undefined" : "Method"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Evidence",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Evidence",
+      "undefined" : "Evidence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid#celltypecancer",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "celltypecancer",
+      "undefined" : "celltypecancer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#ClinicalStudy",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClinicalStudy",
+      "undefined" : "Clinical Study"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#Problem",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Problem",
+      "undefined" : "Problem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid#diseaseofcellularproliferation",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "diseaseofcellularproliferation",
+      "undefined" : "diseaseofcellularproliferation"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/ncit#ClinicalTrial",
+    "baseIri" : "http://purl.obolibrary.org/obo/ncit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClinicalTrial",
+      "undefined" : "Clinical Trial"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/vocab/Publication",
+    "baseIri" : "http://purl.org/vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Publication",
+      "undefined" : "Publication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/dc/elements/1.1/title",
+    "baseIri" : "http://purl.org/dc/elements/1.1",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "title"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#isClinicalTrial",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isClinicalTrial",
+      "undefined" : "is clinical trial"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasDrugEffects",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasDrugEffects",
+      "undefined" : "has drug effects"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasStudyDesign",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasStudyDesign",
+      "undefined" : "has study design"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#testOn",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "testOn",
+      "undefined" : "test on"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#useDrug",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "useDrug",
+      "undefined" : "use drug"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasOverexpressionGene",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasOverexpressionGene",
+      "undefined" : "has overexpression gene"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasGene",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasGene",
+      "undefined" : "has gene"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://purl.org/vocab/creator",
+    "baseIri" : "http://purl.org/vocab",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "creator",
+      "undefined" : "creator"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasMaterial",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasMaterial",
+      "undefined" : "has material"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/vocab/publisher",
+    "baseIri" : "http://purl.org/vocab",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "publisher",
+      "undefined" : "publisher"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "20",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "29",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#addressesResearch",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "addressesResearch",
+      "undefined" : "addresses research"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "41"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#findEvidence",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "findEvidence",
+      "undefined" : "find evidence"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasDisease",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasDisease",
+      "undefined" : "has disease"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#useTreatment",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "useTreatment",
+      "undefined" : "use treatment"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#hasExperimentMethod",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasExperimentMethod",
+      "undefined" : "has experiment method"
+    },
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#useClinicalData",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "useClinicalData",
+      "undefined" : "use clinical data"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.owl-ontologies.com/pharmsci#InvestigatesProblem",
+    "baseIri" : "http://www.owl-ontologies.com/pharmsci",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "InvestigatesProblem",
+      "undefined" : "investigates problem"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  } ]
+}
