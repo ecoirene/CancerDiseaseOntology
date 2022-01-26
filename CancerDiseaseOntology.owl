@@ -1,0 +1,308 @@
+Prefix(:=<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(sio:=<http://semanticscience.org/ontology/.sio.owl>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace#>)
+Prefix(xsd:=<http://www.w3.org/2001/01/rdf-schema#>)
+Prefix(DOID:=<http://purl.obolibrary.org/obo/doid#>)
+Prefix(NCIT:=<http://purl.obolibrary.org/obo/ncit#>)
+Prefix(base:=<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(vann:=<http://purl.org/vocab/vann/>)
+Prefix(CHEBI:=<http://purl.obolibrary.org/obo/chebi#>)
+Prefix(terms1:=<http://purl.org/vocab/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(pharmsci:=<http://www.owl-ontologies.com/pharmsci#>)
+Prefix(pharmasci:=<https://w3id.org/skgo/pharmsci#>)
+
+
+Ontology(<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl>
+Annotation(dc:creator "Irene Sainz de la Maza")
+Annotation(dc:creator "Óscar Fernández Blanco")
+Annotation(dc:description "Ontology code created by Chowlk")
+Annotation(owl:versionInfo "0.0.1")
+
+Declaration(Class(CHEBI:drug))
+Declaration(Class(DOID:Disease))
+Declaration(Class(DOID:cancer))
+Declaration(Class(DOID:celltypecancer))
+Declaration(Class(DOID:diseaseofcellularproliferation))
+Declaration(Class(DOID:organsystemcancer))
+Declaration(Class(NCIT:ClinicalData))
+Declaration(Class(NCIT:ClinicalStudy))
+Declaration(Class(NCIT:ClinicalTrial))
+Declaration(Class(NCIT:Evidence))
+Declaration(Class(NCIT:Gene))
+Declaration(Class(NCIT:Material))
+Declaration(Class(NCIT:Method))
+Declaration(Class(NCIT:Patient))
+Declaration(Class(NCIT:Problem))
+Declaration(Class(NCIT:ResearchActivity))
+Declaration(Class(NCIT:StudyDesign))
+Declaration(Class(NCIT:Treat))
+Declaration(Class(terms1:Publication))
+Declaration(Class(sio:Experiment))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(foaf:Organization))
+Declaration(Class(foaf:Person))
+Declaration(ObjectProperty(terms1:creator))
+Declaration(ObjectProperty(terms1:publisher))
+Declaration(ObjectProperty(pharmsci:InvestigatesProblem))
+Declaration(ObjectProperty(pharmsci:addressesResearch))
+Declaration(ObjectProperty(pharmsci:findEvidence))
+Declaration(ObjectProperty(pharmsci:hasDisease))
+Declaration(ObjectProperty(pharmsci:hasExperimentMethod))
+Declaration(ObjectProperty(pharmsci:hasGene))
+Declaration(ObjectProperty(pharmsci:hasMaterial))
+Declaration(ObjectProperty(pharmsci:hasStudyDesign))
+Declaration(ObjectProperty(pharmsci:isClinicalTrial))
+Declaration(ObjectProperty(pharmsci:testOn))
+Declaration(ObjectProperty(pharmsci:useClinicalData))
+Declaration(ObjectProperty(pharmsci:useDrug))
+Declaration(ObjectProperty(pharmsci:useTreatment))
+Declaration(DataProperty(dc:title))
+Declaration(DataProperty(pharmsci:hasDrugEffects))
+Declaration(DataProperty(pharmsci:hasOverexpressionGene))
+Declaration(NamedIndividual(<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl>))
+Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:description))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: terms1:creator (creator)
+
+AnnotationAssertion(rdfs:label terms1:creator "creator")
+ObjectPropertyDomain(terms1:creator terms1:Publication)
+ObjectPropertyRange(terms1:creator foaf:Person)
+
+# Object Property: terms1:publisher (publisher)
+
+AnnotationAssertion(rdfs:label terms1:publisher "publisher")
+ObjectPropertyDomain(terms1:publisher terms1:Publication)
+ObjectPropertyRange(terms1:publisher foaf:Organization)
+
+# Object Property: pharmsci:InvestigatesProblem (investigates problem)
+
+AnnotationAssertion(rdfs:label pharmsci:InvestigatesProblem "investigates problem")
+ObjectPropertyDomain(pharmsci:InvestigatesProblem NCIT:ClinicalStudy)
+ObjectPropertyRange(pharmsci:InvestigatesProblem NCIT:Problem)
+
+# Object Property: pharmsci:addressesResearch (addresses research)
+
+AnnotationAssertion(rdfs:label pharmsci:addressesResearch "addresses research")
+ObjectPropertyDomain(pharmsci:addressesResearch terms1:Publication)
+ObjectPropertyRange(pharmsci:addressesResearch NCIT:ResearchActivity)
+
+# Object Property: pharmsci:findEvidence (find evidence)
+
+AnnotationAssertion(rdfs:label pharmsci:findEvidence "find evidence")
+ObjectPropertyDomain(pharmsci:findEvidence NCIT:ClinicalStudy)
+ObjectPropertyRange(pharmsci:findEvidence NCIT:Evidence)
+
+# Object Property: pharmsci:hasDisease (has disease)
+
+AnnotationAssertion(rdfs:label pharmsci:hasDisease "has disease")
+ObjectPropertyDomain(pharmsci:hasDisease NCIT:Patient)
+ObjectPropertyRange(pharmsci:hasDisease DOID:Disease)
+
+# Object Property: pharmsci:hasExperimentMethod (has experiment method)
+
+AnnotationAssertion(rdfs:label pharmsci:hasExperimentMethod "has experiment method")
+ObjectPropertyDomain(pharmsci:hasExperimentMethod NCIT:Method)
+ObjectPropertyRange(pharmsci:hasExperimentMethod sio:Experiment)
+
+# Object Property: pharmsci:hasGene (has gene)
+
+AnnotationAssertion(rdfs:label pharmsci:hasGene "has gene")
+ObjectPropertyDomain(pharmsci:hasGene NCIT:Material)
+ObjectPropertyRange(pharmsci:hasGene NCIT:Gene)
+
+# Object Property: pharmsci:hasMaterial (has material)
+
+AnnotationAssertion(rdfs:label pharmsci:hasMaterial "has material")
+ObjectPropertyDomain(pharmsci:hasMaterial sio:Experiment)
+ObjectPropertyRange(pharmsci:hasMaterial NCIT:Material)
+
+# Object Property: pharmsci:hasStudyDesign (has study design)
+
+AnnotationAssertion(rdfs:label pharmsci:hasStudyDesign "has study design")
+ObjectPropertyDomain(pharmsci:hasStudyDesign NCIT:ClinicalStudy)
+ObjectPropertyRange(pharmsci:hasStudyDesign NCIT:StudyDesign)
+
+# Object Property: pharmsci:isClinicalTrial (is clinical trial)
+
+AnnotationAssertion(rdfs:label pharmsci:isClinicalTrial "is clinical trial")
+ObjectPropertyDomain(pharmsci:isClinicalTrial NCIT:Patient)
+ObjectPropertyRange(pharmsci:isClinicalTrial NCIT:ClinicalTrial)
+
+# Object Property: pharmsci:testOn (test on)
+
+AnnotationAssertion(rdfs:label pharmsci:testOn "test on")
+ObjectPropertyDomain(pharmsci:testOn CHEBI:drug)
+ObjectPropertyRange(pharmsci:testOn NCIT:ClinicalTrial)
+
+# Object Property: pharmsci:useClinicalData (use clinical data)
+
+AnnotationAssertion(rdfs:label pharmsci:useClinicalData "use clinical data")
+ObjectPropertyDomain(pharmsci:useClinicalData NCIT:ClinicalStudy)
+ObjectPropertyRange(pharmsci:useClinicalData NCIT:ClinicalData)
+
+# Object Property: pharmsci:useDrug (use drug)
+
+AnnotationAssertion(rdfs:label pharmsci:useDrug "use drug")
+ObjectPropertyDomain(pharmsci:useDrug NCIT:Treat)
+ObjectPropertyRange(pharmsci:useDrug CHEBI:drug)
+
+# Object Property: pharmsci:useTreatment (use treatment)
+
+AnnotationAssertion(rdfs:label pharmsci:useTreatment "use treatment")
+ObjectPropertyDomain(pharmsci:useTreatment NCIT:Treat)
+ObjectPropertyRange(pharmsci:useTreatment NCIT:Method)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: dc:title (title)
+
+AnnotationAssertion(rdfs:label dc:title "title")
+DataPropertyDomain(dc:title terms1:Publication)
+DataPropertyRange(dc:title rdfs:Literal)
+
+# Data Property: pharmsci:hasDrugEffects (has drug effects)
+
+AnnotationAssertion(rdfs:label pharmsci:hasDrugEffects "has drug effects")
+DataPropertyDomain(pharmsci:hasDrugEffects CHEBI:drug)
+DataPropertyRange(pharmsci:hasDrugEffects rdfs:Literal)
+
+# Data Property: pharmsci:hasOverexpressionGene (has overexpression gene)
+
+AnnotationAssertion(rdfs:label pharmsci:hasOverexpressionGene "has overexpression gene")
+DataPropertyDomain(pharmsci:hasOverexpressionGene NCIT:Gene)
+DataPropertyRange(pharmsci:hasOverexpressionGene rdfs:Literal)
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: rdfs:Literal (Literal)
+
+AnnotationAssertion(rdfs:label rdfs:Literal "Literal")
+
+
+############################
+#   Classes
+############################
+
+# Class: CHEBI:drug (drug)
+
+AnnotationAssertion(rdfs:label CHEBI:drug "drug")
+
+# Class: DOID:Disease (Disease)
+
+AnnotationAssertion(rdfs:label DOID:Disease "Disease")
+
+# Class: DOID:cancer (cancer)
+
+AnnotationAssertion(rdfs:label DOID:cancer "cancer")
+SubClassOf(DOID:cancer DOID:diseaseofcellularproliferation)
+
+# Class: DOID:celltypecancer (celltypecancer)
+
+AnnotationAssertion(rdfs:label DOID:celltypecancer "celltypecancer")
+SubClassOf(DOID:celltypecancer DOID:cancer)
+DisjointClasses(DOID:celltypecancer DOID:organsystemcancer)
+
+# Class: DOID:diseaseofcellularproliferation (diseaseofcellularproliferation)
+
+AnnotationAssertion(rdfs:label DOID:diseaseofcellularproliferation "diseaseofcellularproliferation")
+SubClassOf(DOID:diseaseofcellularproliferation DOID:Disease)
+
+# Class: DOID:organsystemcancer (organsystemcancer)
+
+AnnotationAssertion(rdfs:label DOID:organsystemcancer "organsystemcancer")
+SubClassOf(DOID:organsystemcancer DOID:cancer)
+
+# Class: NCIT:ClinicalData (Clinical Data)
+
+AnnotationAssertion(rdfs:label NCIT:ClinicalData "Clinical Data")
+
+# Class: NCIT:ClinicalStudy (Clinical Study)
+
+AnnotationAssertion(rdfs:label NCIT:ClinicalStudy "Clinical Study")
+SubClassOf(NCIT:ClinicalStudy NCIT:ResearchActivity)
+
+# Class: NCIT:ClinicalTrial (Clinical Trial)
+
+AnnotationAssertion(rdfs:label NCIT:ClinicalTrial "Clinical Trial")
+SubClassOf(NCIT:ClinicalTrial NCIT:ClinicalStudy)
+
+# Class: NCIT:Evidence (Evidence)
+
+AnnotationAssertion(rdfs:label NCIT:Evidence "Evidence")
+
+# Class: NCIT:Gene (Gene)
+
+AnnotationAssertion(rdfs:label NCIT:Gene "Gene")
+
+# Class: NCIT:Material (Material)
+
+AnnotationAssertion(rdfs:label NCIT:Material "Material")
+
+# Class: NCIT:Method (Method)
+
+AnnotationAssertion(rdfs:label NCIT:Method "Method")
+
+# Class: NCIT:Patient (Patient)
+
+AnnotationAssertion(rdfs:label NCIT:Patient "Patient")
+
+# Class: NCIT:Problem (Problem)
+
+AnnotationAssertion(rdfs:label NCIT:Problem "Problem")
+
+# Class: NCIT:ResearchActivity (Research Activity)
+
+AnnotationAssertion(rdfs:label NCIT:ResearchActivity "Research Activity")
+
+# Class: NCIT:StudyDesign (Study Design)
+
+AnnotationAssertion(rdfs:label NCIT:StudyDesign "Study Design")
+
+# Class: NCIT:Treat (Treat)
+
+AnnotationAssertion(rdfs:label NCIT:Treat "Treat")
+
+# Class: terms1:Publication (Publication)
+
+AnnotationAssertion(rdfs:label terms1:Publication "Publication")
+
+# Class: sio:Experiment (Experiment)
+
+AnnotationAssertion(rdfs:label sio:Experiment "Experiment")
+
+# Class: foaf:Organization (Organization)
+
+AnnotationAssertion(rdfs:label foaf:Organization "Organization")
+
+# Class: foaf:Person (Person)
+
+AnnotationAssertion(rdfs:label foaf:Person "Person")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> (<http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl>)
+
+DataPropertyAssertion(dc:title <http://www.w3.org/UPM/MBC/TS/FinalExam/IreneOscar.ttl> "Cancer Disease Ontology")
+
+
+)
